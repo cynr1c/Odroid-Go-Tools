@@ -1,5 +1,7 @@
 # Make Goplay
 
+Build a new go-play.fw from scratch.
+
 ## Prerequisites
 * https://github.com/OtherCrashOverride/esp-idf
 * https://docs.espressif.com/projects/esp-idf/en/latest/get-started/linux-setup.html
