@@ -13,15 +13,15 @@ Build a new go-play.fw from scratch.
 Make sure to change the paths in make_go_play.sh to your real paths.
 Connect your Odroid Go to your PC (for reading the flash).
 
-Paths:
-export PATH="$PATH:$HOME/esp/xtensa-esp32-elf/bin"   Path of the ESP bins
-export IDF_PATH=~/esp/esp-idf       Path of the esp-idf
-GOPLAY_SOURCE_PATH=""               Path of the Go-play source code
-PATH_ORIG=`pwd`                     Path where the script is located
-SERIAL_PORT="/dev/ttyUSB0"          Which serial device to use
-GO_PLAY_ORIG_FW_PATH="Go-Play.fw"   Path of the original Go-Play Firmware file
-EFWT_PATH="../efwt"                 Path of efwt
-MKFW_PATH="."                       Path of mkfw
+* Paths:
+* export PATH="$PATH:$HOME/esp/xtensa-esp32-elf/bin"   Path of the ESP bins
+* export IDF_PATH=~/esp/esp-idf       Path of the esp-idf
+* GOPLAY_SOURCE_PATH=""               Path of the Go-play source code
+* PATH_ORIG=`pwd`                     Path where the script is located
+* SERIAL_PORT="/dev/ttyUSB0"          Which serial device to use
+* GO_PLAY_ORIG_FW_PATH="Go-Play.fw"   Path of the original Go-Play Firmware file
+* EFWT_PATH="../efwt"                 Path of efwt
+* MKFW_PATH="."                       Path of mkfw
 
 ## Usage
 chmod +x make_go_play.sh
