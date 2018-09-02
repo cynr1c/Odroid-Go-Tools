@@ -10,8 +10,8 @@ Build a new go-play.fw from scratch.
 * The source code of go-play see also https://github.com/OtherCrashOverride
 
 ## Installation
-Make sure to change the paths in make_go_play.sh to your real paths
-Connect your Odroid Go to your PC (for reading the flash)
+Make sure to change the paths in make_go_play.sh to your real paths.
+Connect your Odroid Go to your PC (for reading the flash).
 
 ## Usage
 chmod +x make_go_play.sh
