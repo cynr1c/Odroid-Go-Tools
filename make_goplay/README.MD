@@ -8,6 +8,7 @@ Build a new go-play.fw from scratch.
 * An original go-play image, see https://github.com/OtherCrashOverride/go-play/releases to extract the tile
 * An odroid go flashed with a go-play image and connected to the computer to extract springboard.bin
 * The source code of go-play see also https://github.com/OtherCrashOverride/go-play
+* mkfw (Make Firmware) https://github.com/OtherCrashOverride/odroid-go-firmware/tree/master/tools/mkfw
 
 ## Installation
 Make sure to change the paths in make_go_play.sh to your real paths.
