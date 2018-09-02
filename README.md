@@ -20,3 +20,7 @@ Recompile go-play and build a new go-play.fw image
 
 ## License
 This project is licensed under the APACHE 2 License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+Much thanks and beer to OtherCrashOverride for developement. See https://github.com/OtherCrashOverride
