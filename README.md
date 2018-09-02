@@ -16,7 +16,7 @@ Recompile go-play and build a new go-play.fw image
 * https://docs.espressif.com/projects/esp-idf/en/latest/get-started/linux-setup.html
 
 ## Authors
-*23pieces
+* 23pieces
 
 ## License
 This project is licensed under the APACHE 2 License - see the [LICENSE.md](LICENSE.md) file for details
