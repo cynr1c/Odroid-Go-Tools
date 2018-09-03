@@ -23,55 +23,55 @@ int main(int argc, char *argv[])
     {
         FILE* file = fopen(argv[1], "rb");
         if (!file)
-		{
-			printf("Couldn't open %s \n", argv[1]);
-			printf("Exiting! \n");
-			exit(1);
-		}
+	{
+		printf("Couldn't open %s \n", argv[1]);
+		printf("Exiting! \n");
+			xit(1);
+	}
  
-		printf("Opened %s \n", argv[1]);
+	printf("Opened %s \n", argv[1]);
 
-		FILE* output = fopen(argv[2], "wb");
+	FILE* output = fopen(argv[2], "wb");
         if (!output)
-		{
-			printf("Couldn't open %s \n", argv[2]);
-			printf("Exiting! \n");
-			exit(1);
-		}
-		printf("Opened %s \n", argv[2]);
+	{
+		printf("Couldn't open %s \n", argv[2]);
+		printf("Exiting! \n");
+		exit(1);
+	}
+	printf("Opened %s \n", argv[2]);
 
         size_t count;
 	
-		char READ_HEADER[sizeof(HEADER)];
+	char READ_HEADER[sizeof(HEADER)];
 	
         count = fread(READ_HEADER, 1, sizeof(READ_HEADER), file);
 
-		if(!strncmp(HEADER,READ_HEADER,strlen(HEADER)))
-		{
-	   	 printf("HEADERS don't match! \n");
-		 printf("Exiting! \n");
-		 exit(2);
-		}
-		else
-		{
-	    	printf("HEADERS match\n");
-	    	printf("HEADER='%s'\n", HEADER);
-		}	
+	if(!strncmp(HEADER,READ_HEADER,strlen(HEADER)))
+	{
+		printf("HEADERS don't match! \n");
+		printf("Exiting! \n");
+	 	exit(2);
+	}
+	else
+	{
+		printf("HEADERS match\n");
+		printf("HEADER='%s'\n", HEADER);
+	}	
 
         count = fread(FirmwareDescription, FIRMWARE_DESCRIPTION_SIZE, 1, file);
         printf("FirmwareDescription='%s'\n", FirmwareDescription);
 
-		fseek ( file , 16 , SEEK_CUR); //mkfw writes 16 bytes offset after the description, set file postion 16 byte forward
+	fseek ( file , 16 , SEEK_CUR); //mkfw writes 16 bytes offset after the description, set file postion 16 byte forward
 	
         count = fread(tile, 1, sizeof(tile), file);
         if (count != sizeof(tile))
         {
-            printf("Invalid tile\n");
-			printf("Exiting! \n");
-            exit(3);
+            	printf("Invalid tile\n");
+		printf("Exiting! \n");
+            	exit(3);
         }
 	
-		count = fwrite(tile, 1, sizeof(tile), output);
+	count = fwrite(tile, 1, sizeof(tile), output);
         printf("tile: wrote %d bytes.\n", (int)count);
 
     }
